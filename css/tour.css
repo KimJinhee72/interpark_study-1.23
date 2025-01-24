@@ -1,4 +1,69 @@
 @charset "utf-8";
-.tour-img img{
-    width: 100%;
+.tour .swiper-wrapper{
+    /* 그림이 튀길때만 아주 작게 적용하기 */
+    align-items: flex-end;
+}
+.tour-img img {
+  width: 100%;
+}
+.tour-link {
+  display: block;
+  border-radius: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  /* 사진이 보더라디우스 안먹으면 히든이 필요 */
+  overflow: hidden;
+}
+.tour-img {
+}
+.tour-img img {
+  width: 100%;
+  /* 같은 비율을 보이도록함 */
+  aspect-ratio: 1 / 0.6;
+}
+.tour-info {
+  padding: 5%;
+  background-color: #fff;
+}
+.tour-info-list li {
+  position: relative;
+}
+.tour-cate {
+  position: absolute;
+  top: -33px;
+  left: 0;
+  display: inline-block;
+  background: #4a95ff;
+  font-size: 14px;
+  line-height: 32px;
+  color: #fff;
+  font-weight: 700;
+  padding: 0 10px;
+  border-radius: 3px;
+  z-index: 99;
+}
+.tour-title {
+  display: block;
+  font-size: 15px;
+  line-height: 18px;
+  color: #4a95ff;
+  padding-top: 10px;
+  /* 한줄 말줄임 표시 */
+  /* max-width: 200px; */
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  /* width: 200px;  더줄이고 싶으면 정해주면 됨*/
+}
+.tour-price{
+    font-size: 16px;
+    line-height: 24px;
+
+}
+.tour-price b{
+    font-weight: 700;
+    font-size: 20px;
+}
+.tour-place{
+    font-size: 12px;
+    font-size: 2rem; 
 }
